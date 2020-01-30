@@ -1,0 +1,3 @@
+### the-bonus
+#### Documentation in development...
+Ping @guilhermepontes on Slack to get the configuration keys.

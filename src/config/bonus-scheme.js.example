@@ -1,0 +1,8 @@
+const FIXED_BONUS = 1000;
+const HOLIDAY_ALLOWANCE = 200;
+
+export const COMPANY_BASE_BONUS = FIXED_BONUS + HOLIDAY_ALLOWANCE;
+
+export function calculateBonus(totalHours) {
+  return hours * 10 + FIXED_BONUS + HOLIDAY_ALLOWANCE;
+}

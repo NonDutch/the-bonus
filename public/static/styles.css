@@ -1,0 +1,233 @@
+* {
+  font-family: Barlow, "sans-serif";
+  transition: 0.2s all;
+  box-sizing: border-box
+}
+
+body {
+  padding: 50px 20px 0;
+  margin: 0;
+  background: darkslateblue;
+  font-size: 16px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header__title {
+  color: snow;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: 2px;
+}
+
+.header__frontmen {
+  font-family: 'Titillium Web', Barlow, sans-serif;
+  color: sandybrown;
+}
+
+.header__mvp {
+  font-size: .6rem;
+}
+
+.form {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px 10px;
+  background: snow;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.form__input {
+  color: #333;
+  width: 200px;
+  border: none;
+  background: #555;
+  color: snow;
+}
+
+.form__input:focus {
+  background: #666;
+}
+
+.form__input:active {
+  font-size: .8rem;
+}
+
+.form__input::placeholder {
+  color: silver;
+}
+
+.form__button {
+  margin-left: 5px;
+  background: lightseagreen;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+
+.form__button:not(:disabled):hover {
+  opacity: 0.8;
+}
+
+.form__button:disabled {
+  background: #999;
+  color: #333;
+  cursor: not-allowed;
+}
+
+.form__input,
+.form__button {
+  font-size: 0.8rem;
+  outline: none;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.form__error {
+  display: block;
+  font-size: 0.8rem;
+  color: indianred;
+  margin-top: 15px;
+}
+
+.dashboard {
+  max-width: 1250px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.dashboard__title {
+  color: snow;
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin-top: 40px;
+}
+
+.dashboard__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dashboard__items--single {
+  justify-content: center;
+}
+
+.dashboard__item {
+  padding: 15px 30px;
+  background: snow;
+  margin: 5px;
+  border-radius: 4px;
+  max-width: 190px;
+  margin-bottom: 20px;
+}
+
+.dashboard__item--single {
+  background: none;
+  max-width: 100%;
+}
+
+.dashboard__input {
+  padding: 4px 5px;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.dashboard__input--single {
+  font-size: 2.2rem;
+  padding: 10px 15px;
+  margin-top: 0;
+  max-width: 200px;
+  text-align: center;
+}
+
+.dashboard__input:focus {
+  border-color: darkslateblue;
+}
+
+.dashboard__item-name {
+  display: block;
+  font-weight: normal;
+  color: darkslateblue;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.dashboard__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dashboard__predict {
+  margin-left: 5px;
+  color: snow;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .8rem;
+  cursor: help;
+}
+
+.dashboard__result {
+  font-size: 5rem;
+  font-weight: normal;
+  color: palegreen;
+  margin: 0 0 30px 0;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  border-bottom: 1px solid snow;
+  padding: 0;
+}
+
+.react-tabs__tab  {
+  font-size: 1rem;
+  color: snow;
+  margin: 0 10px;
+  padding: 5px 20px;
+  cursor: pointer;
+  border: 1px solid snow;
+  margin-bottom: -1px;
+  border-radius: 4px 4px 0 0;
+}
+
+.react-tabs__tab--selected {
+  border-bottom-color: darkslateblue;
+  font-weight: bold;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.loading {
+  color: snow;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .dashboard__item {
+    max-width: 150px;
+  }
+
+  .dashboard__item--single {
+    max-width: 200px;
+  }
+}
